@@ -2,11 +2,11 @@
 <mat-toolbar color="primary">
   <span>Proof of concept</span>
   <span class="example-spacer"></span>
-  <button mat-icon-button>
-    <mat-icon>shopping_cart</mat-icon>
-  </button>
-  <button mat-icon-button>
+  <button mat-icon-button routerLink="/ship">
     <mat-icon>local_shipping</mat-icon>
+  </button>
+  <button mat-icon-button routerLink="/order">
+    <mat-icon>shopping_cart</mat-icon>
   </button>
 </mat-toolbar>
 <router-outlet></router-outlet>

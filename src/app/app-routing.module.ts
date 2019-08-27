@@ -1,12 +1,24 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    redirectTo: 'ship',
+    pathMatch: 'full',
+  },
+  {
+    path: 'ship',
+    loadChildren: './ship/ship.module#ShipModule',
+  },
+  {
+    path: 'order',
+    loadChildren: './order/order.module#OrderModule'
+  },
+  {
+    path: 'fulfill',
+    loadChildren: './ship/ship.module#ShipModule',
+    outlet: 'popup',
   }
 ];
 
