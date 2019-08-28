@@ -6,7 +6,8 @@ import {
 } from '@angular/material';
 
 import { ShipRoutingModule } from './ship-routing.module';
-import { containers } from './containers';
+import { SharedModule } from '../shared/shared.module';
+// import { containers } from './containers';
 
 // import { ShipDialogComponent } from './dialog/dialog.component';
 
@@ -15,17 +16,14 @@ import { containers } from './containers';
     CommonModule,
     MatIconModule,
     MatTabsModule,
+    SharedModule,
     ShipRoutingModule,
   ],
   declarations: [
-    // ShipDialogComponent,
-    ...containers,
   ],
   entryComponents: [
-    // ShipDialogComponent,
   ],
   exports: [
-    // ShipDialogComponent
   ]
 })
 export class ShipModule { }

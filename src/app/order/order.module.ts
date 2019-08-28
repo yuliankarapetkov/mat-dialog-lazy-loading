@@ -10,6 +10,8 @@ import { OrderRoutingModule } from './order-routing.module';
 import { containers } from './containers';
 import { dialogs } from './dialogs';
 
+import { SharedModule } from '../shared/shared.module';
+
 @NgModule({
   declarations: [
     ...containers,
@@ -20,7 +22,8 @@ import { dialogs } from './dialogs';
     MatButtonModule,
     MatDialogModule,
     MatIconModule,
-    OrderRoutingModule
+    SharedModule,
+    OrderRoutingModule,
   ],
   entryComponents: [
     ...dialogs,

@@ -8,7 +8,7 @@ import {
   ToComponent,
   ParcelsComponent,
   RatesComponent,
-} from './containers';
+} from '../shared/containers';
 
 const routes: Routes = [
   {
